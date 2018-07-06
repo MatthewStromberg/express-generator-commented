@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+//https://www.sitepoint.com/create-new-express-js-apps-with-express-generator/
 /**
  * Module dependencies.
  */

@@ -1,7 +1,7 @@
-/*
-Create a custom Error which comes with more
-functionality than a default error
-*/
+/**
+ * Create a custom Error which comes with more
+ * functionality than a default error
+ */
 var createError = require('http-errors');
 /**
  * Module that allows for easier use of NodeJS
@@ -68,6 +68,10 @@ app.use(cookieParser());
  */
 app.use(express.static(path.join(__dirname, 'public')));
 
+/**
+ * For routes to the / directory, use the indexRouter (./routes/index.js)
+ * For routes to the /users directory, use usersRouter (./routes/routes.js)
+ */
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
